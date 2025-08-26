@@ -1,0 +1,15 @@
+[workspace]
+features_always_increment_minor = true
+
+[changelog]
+commit_parsers = [
+  { message = "^feat", group = "added" },
+  { message = "^changed", group = "changed" },
+  { message = "^deprecated", group = "deprecated" },
+  { message = "^fix", group = "fixed" },
+  { message = "^security", group = "security" },
+  { message = "^refactor", group = "changed" },
+  { message = "^build", group = "build" },
+  { message = "^doc|docs", group = "docs" },
+  { message = "^.*", group = "other" },
+]
